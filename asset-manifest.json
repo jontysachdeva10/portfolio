@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/jonty.github.io/static/css/main.b4299dac.chunk.css",
-    "main.js": "/jonty.github.io/static/js/main.41534061.chunk.js",
-    "main.js.map": "/jonty.github.io/static/js/main.41534061.chunk.js.map",
-    "runtime-main.js": "/jonty.github.io/static/js/runtime-main.2f5fbc91.js",
-    "runtime-main.js.map": "/jonty.github.io/static/js/runtime-main.2f5fbc91.js.map",
-    "static/js/2.2cc3fd0e.chunk.js": "/jonty.github.io/static/js/2.2cc3fd0e.chunk.js",
-    "static/js/2.2cc3fd0e.chunk.js.map": "/jonty.github.io/static/js/2.2cc3fd0e.chunk.js.map",
-    "index.html": "/jonty.github.io/index.html",
-    "static/css/main.b4299dac.chunk.css.map": "/jonty.github.io/static/css/main.b4299dac.chunk.css.map",
-    "static/js/2.2cc3fd0e.chunk.js.LICENSE.txt": "/jonty.github.io/static/js/2.2cc3fd0e.chunk.js.LICENSE.txt",
-    "static/media/App.scss": "/jonty.github.io/static/media/Valencia.982aa301.ttf"
+    "main.css": "/static/css/main.6aa75d18.chunk.css",
+    "main.js": "/static/js/main.41534061.chunk.js",
+    "main.js.map": "/static/js/main.41534061.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5ebc510a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5ebc510a.js.map",
+    "static/js/2.609a2d5b.chunk.js": "/static/js/2.609a2d5b.chunk.js",
+    "static/js/2.609a2d5b.chunk.js.map": "/static/js/2.609a2d5b.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.6aa75d18.chunk.css.map": "/static/css/main.6aa75d18.chunk.css.map",
+    "static/js/2.609a2d5b.chunk.js.LICENSE.txt": "/static/js/2.609a2d5b.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/static/media/Valencia.982aa301.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.2f5fbc91.js",
-    "static/js/2.2cc3fd0e.chunk.js",
-    "static/css/main.b4299dac.chunk.css",
+    "static/js/runtime-main.5ebc510a.js",
+    "static/js/2.609a2d5b.chunk.js",
+    "static/css/main.6aa75d18.chunk.css",
     "static/js/main.41534061.chunk.js"
   ]
 }
