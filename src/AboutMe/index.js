@@ -54,7 +54,7 @@ const Description = styled.div`
 
   a {
     color: #ff00c1;
-    font-family: fantasy;
+    font-family: "Noto Sans JP", sans-serif;
     text-decoration: none;
     display: inline-block;
     position: relative;
