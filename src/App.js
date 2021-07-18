@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Hero from './Hero/index';
+import Loading from './Utils/Loading/index';
+import './App.scss';
+import AboutMe from './AboutMe';
+import Job from './Job';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      { loading ? <Loading /> : 
+      <div>
+        <Hero />
+        <AboutMe />
+        <Job />
+      </div>
+      }
     </div>
   );
 }
