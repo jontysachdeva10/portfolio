@@ -1,0 +1,56 @@
+.accordion {
+  color: #e1dfdd;
+  margin-top: 8rem;
+  cursor: pointer;
+  border-bottom: 1px solid #e1dfdd;
+  font-family: "NeueMontreal";
+}
+
+.items {
+  border-top: 1px solid #e1dfdd;
+  padding: 1rem 0;
+
+  .title {
+    font-size: 6rem;
+
+    span {
+      color: #e1dfdd;
+      transition: all 0.5s ease-out;
+
+      &:hover {
+        font-family: "NeueMontrealMedium";
+        transition: all 0.5s ease-in;
+      }
+    }
+  }
+
+  .content {
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 1rem;
+    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+    font-size: 1.4rem;
+    font-family: "NeueMontrealMedium";
+
+    p {
+      float: right;
+    }
+
+    span {
+      font-family: "NeueMontrealItalic";
+    }
+
+    ul {
+      font-size: 1.2rem;
+      list-style: none;
+      font-family: "NeueMontreal";
+      float: right;
+    }
+  }
+
+  .show {
+    height: auto;
+    max-height: 20rem;
+    transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+  }
+}

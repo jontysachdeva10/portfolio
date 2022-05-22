@@ -1,0 +1,23 @@
+.pen-stroke {
+  position: relative;
+  display: inline;
+  // color: #f83d0c;
+  color: #eb533b;
+  // font-family: "NeueMontrealBold";
+
+  svg {
+    position: absolute;
+    top: 1.2em;
+    left: 0;
+    width: 100%;
+    overflow: visible;
+
+    path {
+      fill: none;
+      stroke: #eb533b;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    //   vector-effect: non-scaling-stroke;
+    }
+  }
+}

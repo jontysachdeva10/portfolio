@@ -1,29 +1,22 @@
-import Hero from './Hero/index';
-import Loading from './Utils/Loading/index';
-import './App.scss';
-import AboutMe from './AboutMe';
-import Job from './Job';
-import { useEffect, useState } from 'react';
+import React from "react";
+import Hero from "./pages/Hero/index";
+import "./App.scss";
+import AboutMe from "./pages/AboutMe";
+import Testimonials from "./pages/Testimonials";
+import Job from "./pages/Job";
+import Nav from "./components/Nav";
+import Contact from "./pages/Contact";
 
 function App() {
-  const [loading, setLoading] = useState(false);
-
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 3000);
-  }, []);
-
   return (
     <div>
-      { loading ? <Loading /> : 
-      <div>
+      <main>
         <Hero />
         <AboutMe />
         <Job />
-      </div>
-      }
+        <Testimonials />
+        <Contact />
+      </main>
     </div>
   );
 }
