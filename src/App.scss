@@ -5,30 +5,7 @@
 $offWhite: #e1dfdd;
 $myOrange: #eb533b;
 
-// .cursor-dot,
-// .cursor-dot-outline {
-//   pointer-events: none;
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   border-radius: 50%;
-//   opacity: 1;
-//   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-// }
-
-// .cursor-dot {
-//   width: 10px;
-//   height: 10px;
-//   background-color: black;
-// }
-
-// .cursor-dot-outline {
-//   width: 30px;
-//   height: 30px;
-//   border: 1px solid black;
-// }
-
+@import "~bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@380&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
@@ -65,32 +42,12 @@ $myOrange: #eb533b;
 }
 
 @font-face {
-  font-family: "AvenirLight";
-  src: url("./utils/Fonts/Avenir/Avenir-Light-07.ttf");
+  font-family: "AvantGardeBold";
+  src: url("./utils/Fonts/AvantGordeGothic/AvantGarde-Bold.otf");
 }
 
 @font-face {
-  font-family: "AvenirRoman";
-  src: url("./utils/Fonts/Avenir/Avenir-Roman-12.ttf");
-}
-
-@font-face {
-  font-family: "AvenirBook";
-  src: url("./utils/Fonts/Avenir/Avenir-Book-01.ttf");
-}
-
-@font-face {
-  font-family: "AvenirMedium";
-  src: url("./utils/Fonts/Avenir/Avenir-Medium-09.ttf");
-}
-
-@font-face {
-  font-family: "AvenirHeavy";
-  src: url("./utils/Fonts/Avenir/Avenir-Heavy-05.ttf");
-}
-
-@font-face {
-  font-family: "Valencia";
-  src: url("./utils/Fonts/Valencia/Valencia.ttf");
+  font-family: "AvantGardeBook";
+  src: url("./utils/Fonts/AvantGordeGothic/AvantGarde-Book.ttf");
 }
 
