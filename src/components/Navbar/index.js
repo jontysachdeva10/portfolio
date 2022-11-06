@@ -22,14 +22,6 @@ const NavIntro = styled.div`
   font-family: "NeueMontrealMedium";
 `;
 
-// const NavPosition = styled.div`
-//   position: relative;
-//   font-size: 1.4rem;
-//   width: 13rem;
-//   font-family: "NeueMontrealMedium";
-//   /* left: 45% */
-// `;
-
 const NavMenu = styled.div`
   color: #e1dfdd;
   position: relative;
@@ -37,9 +29,6 @@ const NavMenu = styled.div`
   font-family: "NeueMontrealMedium";
 
   a {
-    /* background: white; */
-    /* mix-blend-mode: difference; */
-    /* color: black; */
     text-decoration: none;
     display: inline-block;
     position: relative;
@@ -73,7 +62,6 @@ const Navbar = () => {
   return (
     <Container>
       <NavIntro><span>Jonty Sachdeva</span></NavIntro>
-      {/* <NavPosition>Frontend Developer at Publicis Sapient</NavPosition> */}
       <NavMenu>
         <Link
           className="underline-effect"
