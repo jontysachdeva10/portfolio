@@ -1,5 +1,5 @@
 .carousel-container {
-  height: 30rem;
+  height: 31rem;
   width: 100%;
   background: #eb533b;
   position: relative;
@@ -18,7 +18,7 @@
   grid-template-columns: 2fr 3fr;
 
   .item {
-    padding: 3rem 0 0 3rem;
+    padding: 3rem 0 0 5rem;
     font-size: 1.5rem;
     font-family: "NeueMontreal";
     background-color: #eb533b;
@@ -29,8 +29,8 @@
     font-family: "NeueMontrealItalicMedium";
     background-color: #eb533b;
     color: black;
-    width: 35rem;
-    padding-left: 3rem;
+    width: 85%;
+    padding-left: 4rem;
     padding-top: 3rem;
     font-size: 1.5rem;
     line-height: 1.4;

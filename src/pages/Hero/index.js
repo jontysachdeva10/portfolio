@@ -3,10 +3,7 @@ import { CgArrowDown } from "react-icons/cg";
 import { motion } from "framer-motion";
 import {
   Container,
-  Navbar,
-  NavIntro,
   NavPosition,
-  NavMenu,
   Intro,
 } from "./Hero";
 import { Underline } from "../../components/Underline";
@@ -33,49 +30,7 @@ const Hero = () => {
     <div>
       {/* <Transition timeline={hero} /> */}
       <Container>
-        {/* <Navbar
-          as={motion.div}
-          initial={{ opacity: 0, translateY: -400 }}
-          animate={{ opacity: 1, translateY: 0 }}
-          transition={{ delay: 0.5, duration: 1 }}
-        >
-          <NavIntro>Jonty Sachdeva</NavIntro>
-          <NavPosition>Frontend Developer at Publicis Sapient</NavPosition>
-          <NavMenu>
-            <Link
-              className="underline-effect"
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={-50}
-              duration={500}
-            >
-              About
-            </Link>
-            ,&nbsp;
-            <Link
-              className="underline-effect"
-              to="work"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={1000}
-            >
-              Work
-            </Link>
-            ,&nbsp;
-            <Link
-              className="underline-effect"
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={1500}
-            >
-              Contact
-            </Link>
-          </NavMenu>
-        </Navbar> */}
+        <NavPosition>Front-end Developer at Publicis Sapient</NavPosition>
         <Intro
         // as={motion.div}
         // initial={{ opacity: 0, translateY: 400 }}
@@ -104,20 +59,6 @@ const Hero = () => {
           </span>
           {/* </motion.span> */}
         </Intro>
-        {/* <Image></Image> */}
-        {/* <SecondContainer>
-          <DownArrow>
-            <CgArrowDown />
-          </DownArrow>
-          <Description>
-            WEB DEVELOPER
-          </Description>
-          <Name>
-            <span style={{ paddingLeft: "14.3rem", zIndex: "1" }}>JONTY</span>
-            <br />
-            SACHDEVA
-          </Name>
-        </SecondContainer> */}
         <div style={{ height: "8em" }}></div>
       </Container>
     </div>
