@@ -1,19 +1,26 @@
 .carousel-container {
-  height: 32rem;
+  height: 30rem;
   width: 100%;
   background: #eb533b;
+  position: relative;
 }
 
-.one,
-.two {
+.carousel {
+  position: unset !important;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: 8% !important;
+}
+
+.one {
   display: grid;
   grid-template-columns: 2fr 3fr;
 
   .item {
-    margin-left: 6rem;
-    margin-top: 3rem;
-    font-size: 1.7rem;
-    font-family: "NeueMontrealMedium";
+    padding: 3rem 0 0 3rem;
+    font-size: 1.5rem;
+    font-family: "NeueMontreal";
     background-color: #eb533b;
     color: black;
   }
@@ -22,61 +29,14 @@
     font-family: "NeueMontrealItalicMedium";
     background-color: #eb533b;
     color: black;
-    width: 38rem;
-    padding-left: 4rem;
+    width: 35rem;
+    padding-left: 3rem;
     padding-top: 3rem;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     line-height: 1.4;
   }
 }
 
-input[type="radio"] {
-  position: absolute;
-  width: 1px; /* Setting this to 0 make it invisible for VoiceOver */
-  height: 1px; /* Setting this to 0 make it invisible for VoiceOver */
-  padding: 0;
-  margin: -1px;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-  color: black;
-}
-
-label {
-  display: block;
-  width: 1.4rem;
-  border: 1px solid #4e4e4e;
-  background: #4e4e4e;
-  position: absolute;
-  bottom: 15rem;
-  left: 49%;
-  cursor: pointer;
-  transition: border-color 0.3s linear;
-}
-
-.slide {
-  position: absolute;
-  left: 0%;
-  opacity: 0;
-  transition: all 0.6s ease-in-out;
-}
-
-#first:checked ~ label.first {
-  background: #e1dfdd;
-  border: 1px solid #e1dfdd;
-}
-
-#second:checked ~ label.second {
-  background: #e1dfdd;
-  border: 1px solid #e1dfdd;
-}
-
-#first:checked ~ .one {
-  left: 0;
-  opacity: 1;
-}
-
-#second:checked ~ .two {
-  left: 0;
-  opacity: 1;
+.carousel-indicators [data-bs-target] {
+  background-color: black !important;
 }
