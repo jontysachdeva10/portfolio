@@ -38,6 +38,7 @@ const NavMenu = styled.div`
     &.underline-effect:after {
       content: "";
       position: absolute;
+      top: 2px;
       left: 0;
       display: inline-block;
       height: 1.2em;

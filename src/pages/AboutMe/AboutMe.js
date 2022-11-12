@@ -27,7 +27,7 @@ export const HeaderTitle = styled.div`
 export const Description = styled.div`
   margin-top: 8rem;
   /* text-transform: uppercase; */
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-family: "NeueMontrealMedium";
   width: 90%;
 `;

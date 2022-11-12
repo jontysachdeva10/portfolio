@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import Loading from "./components/Loading";
 import CustomCursor from "./components/CustomCursor";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -31,6 +32,7 @@ function App() {
           <Job />
           <Testimonials />
           <Contact />
+          <Footer />
         </main>
       {/* )} */}
     </div>

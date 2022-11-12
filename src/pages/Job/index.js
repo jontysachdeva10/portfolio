@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react/cjs/react.development";
 import "./Job.scss";
 import { FiArrowUpRight, FiArrowDownRight } from "react-icons/fi";
@@ -6,7 +6,9 @@ import { Underline } from "../../components/Underline";
 import { Container, Header, HeaderTitle } from "./Job";
 
 const Job = () => {
-  const [selected, setSelected] = useState(null);
+  const [selected, setSelected] = useState(0);
+
+  const [isOpen, setIsOpen] = useState(false);
 
   let data = [
     {
@@ -28,6 +30,10 @@ const Job = () => {
     },
   ];
 
+  useEffect(() => {
+    if(selected) setIsOpen(true);
+  });
+
   return (
     <Container id="work">
       <Header>
@@ -41,24 +47,31 @@ const Job = () => {
         <div className="accordion">
           {data.map((item, i) => (
             <div className="items" key={item.company}>
-              <div className="title" onClick={() => setSelected(i)}>
+              <div className="title" onClick={() =>  setSelected(i) }>
                 <span style={{ transition: "all 0.5s ease-in-out" }}>
-                  {selected === i ? <FiArrowDownRight /> : <FiArrowUpRight />}
-                  {/* <FiArrowDownRight style={{ transform: "rotate(-89deg)"}} /> */}
+                  {selected === i ? (
+                    <FiArrowDownRight
+                      className="arrow-down"
+                      style={{ fontSize: "1.1em", marginTop: '-17px' }}
+                    />
+                  ) : (
+                    <FiArrowUpRight
+                      className="arrow-up"
+                      style={{ fontSize: "1.1em", marginTop: '-17px'}}
+                    />
+                  )}
                 </span>
-                <span style={{ float: "right" }}>
-                  {item.company}
-                </span>
+                <span style={isOpen ? { float: "right", fontFamily: 'NeueMontrealBold' } : { float: "right", fontFamily: 'NeueMontreal' }}>{item.company}</span>
               </div>
               <div className={selected === i ? "content show" : "content"}>
-                <p>
+                <div style={{ float: "right" }}>
                   <Underline>
                     <span style={{ fontFamily: "NeueMontrealBold" }}>
                       {item.role}
                     </span>
                   </Underline>
                   ,<span> {item.date}</span>
-                </p>
+                </div>
                 <br />
                 <br />
                 <ul>

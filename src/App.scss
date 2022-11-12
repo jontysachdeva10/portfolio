@@ -1,7 +1,3 @@
-* {
-  margin: 0;
-}
-
 $offWhite: #e1dfdd;
 $myOrange: #eb533b;
 
@@ -49,5 +45,10 @@ $myOrange: #eb533b;
 @font-face {
   font-family: "AvantGardeBook";
   src: url("./utils/Fonts/AvantGordeGothic/AvantGarde-Book.ttf");
+}
+
+* {
+  margin: 0;
+  // font-family: "NeueMontreal";
 }
 

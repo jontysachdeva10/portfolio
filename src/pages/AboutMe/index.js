@@ -28,7 +28,7 @@ const AboutMe = (props) => {
       <div>
         <HeaderTitle>ABOUT ME</HeaderTitle>
         <Description>
-          Hi, my name is <Underline>Jonty Sachdeva</Underline>. I'm a passionate web developer who has a keen interest in animations &
+          Hi, my name is <Underline><span style={{ fontFamily: "NeueMontrealBold" }}>Jonty Sachdeva</span></Underline>. I'm a passionate web developer who has a keen interest in animations &
           designs. I give my best in creating memorable web experiences.
           <br />
           <br />

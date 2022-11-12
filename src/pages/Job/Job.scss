@@ -3,19 +3,20 @@
   margin-top: 8rem;
   cursor: pointer;
   border-bottom: 1px solid #e1dfdd;
-  font-family: "NeueMontrealMedium";
+  // font-family: "NeueMontreal";
 }
 
 .items {
   border-top: 1px solid #e1dfdd;
   padding: 1.2rem 0;
 
-  &:hover {
-    font-family: "NeueMontrealBold";
-  }
+  // &:hover {
+  //   font-family: "NeueMontrealBold";
+  // }
 
   .title {
     font-size: 5rem;
+    // font-family: "NeueMontreal";
 
     span {
       color: #e1dfdd;
@@ -26,13 +27,9 @@
   .content {
     max-height: 0;
     overflow: hidden;
-    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+    transition: cubic-bezier(0, 1, 0, 1) 0.3s 0s;
     font-size: 1.4rem;
     font-family: "NeueMontrealMedium";
-
-    p {
-      float: right;
-    }
 
     span {
       font-family: "NeueMontrealItalic";
@@ -49,6 +46,22 @@
   .show {
     height: auto;
     max-height: 20rem;
-    transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+    transition: cubic-bezier(1, 0, 1, 0) 0.3s 0s;
+
+    & > .title {
+      font-family: 'NeueMontrealBold';
+    }
   }
+}
+
+.arrow-up {
+  stroke-linecap: unset !important;
+  stroke-linejoin: unset !important;
+  stroke-width: 2;
+}
+
+.arrow-down {
+  stroke-linecap: unset !important;
+  stroke-linejoin: unset !important;
+  stroke-width: 3 !important;
 }

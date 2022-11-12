@@ -1,5 +1,5 @@
 import { Underline } from "../../components/Underline";
-import { Container, Title, Description } from "./Contact";
+import { Container, Title, Description, Dot, GetInTouch, ContactMe } from "./Contact";
 
 const Contact = () => {
   return (
@@ -14,40 +14,24 @@ const Contact = () => {
         together.
       </Title>
       <Description>
-        <div
-          style={{
-            backgroundColor: "rgb(41 177 141)",
-            height: "12px",
-            width: "12px",
-            borderRadius: "50%",
-            display: "inline-block",
-            marginTop: '10px'
-          }}
-        ></div>
+        <Dot></Dot>
         <span style={{ color: "rgb(41 177 141)", fontWeight: "bold", marginLeft: '4px' }}>
           Available
         </span>
         &nbsp;for freelance work.
       </Description>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          fontSize: "1.4rem",
-          fontFamily: "NeueMontreal",
-        }}
-      >
+      <GetInTouch>
         Get in touch!&nbsp;
-        <span
-          style={{
-            fontFamily: "NeueMontrealItalicMedium",
-            textDecoration: "underline",
-          }}
-        >
+        {/* <ContactMe className="underline-effect">
           Drop me an email
-        </span>
-      </div>
-      {/* <div style={{ height: "8em" }}></div> */}
+        </ContactMe>
+        &nbsp;
+        or
+        &nbsp; */}
+        <ContactMe className="underline-effect">
+          Connect over LinkedIn
+        </ContactMe>
+      </GetInTouch>
     </Container>
   );
 };

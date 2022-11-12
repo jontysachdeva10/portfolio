@@ -1,0 +1,35 @@
+.resume-btn {
+  position: relative;
+  background-color: black;
+  top: 8rem;
+  height: 14rem;
+  width: 14rem;
+  border-radius: 50%;
+  display: flex;
+  align-self: center;
+  transform: rotate(-12deg);
+  transition: transform 0.2s 0s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #eb533b;
+    transform: rotate(12deg);
+
+    & .resume-btn__content {
+        color: black;
+    }
+  }
+}
+
+.resume-btn__content {
+  color: #e1dfdd;
+  position: absolute;
+  top: 38px;
+  left: 42px;
+}
+
+.arrow-up {
+  stroke-linecap: unset !important;
+  // stroke-linejoin: unset !important;
+  stroke-width: 3 !important;
+}
