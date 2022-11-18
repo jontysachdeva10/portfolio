@@ -21,12 +21,7 @@ const Job = () => {
       company: "Cognizant",
       role: "Jr. Software Engineer",
       date: "June 2019 - Oct 2021",
-      contribution: [
-        "Contributed in automating one of client's web application built on React & Node.js",
-        "Designed, Provisioned & Implemented a new JMS service from scratch.",
-        "Wrote automated functional tests using Nemo.js",
-        "Fixed code quality & bugs across their various applications.",
-      ],
+      contribution: [],
     },
   ];
 

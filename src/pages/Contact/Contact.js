@@ -26,11 +26,12 @@ export const Description = styled.div`
 
 export const Dot = styled.div`
   background-color: rgb(41 177 141);
-  height: 10px;
-  width: 10px;
+  height: 12px;
+  width: 12px;
   border-radius: 50%;
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 11px;
+  margin-right: 3px;
 `;
 
 export const GetInTouch = styled.div`
@@ -52,7 +53,7 @@ export const ContactMe = styled.span`
     top: 2px;
     left: 0;
     display: inline-block;
-    height: 1.2em;
+    height: 1.3em;
     width: 100%;
     border-bottom: 1.5px solid;
     opacity: 0;

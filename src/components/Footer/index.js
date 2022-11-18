@@ -11,9 +11,9 @@ const Footer = () => {
                 <span>Frontend Developer</span>
             </div>
             <div>
-                <span>LinkedIn,&nbsp;</span>
-                <span>Instagram,&nbsp;</span>
-                <span>Github</span>
+                <a className="underline-effect" href='https://www.linkedin.com/in/jonty-sachdeva-20001b149/' target="_blank">LinkedIn</a>,&nbsp;
+                <a className="underline-effect" href='https://www.instagram.com/jontysachdevaa/' target="_blank">Instagram</a>,&nbsp;
+                <a className="underline-effect" href='https://github.com/jontysachdeva10' target="_blank">Github</a>
             </div>
             <div>
                 <span>Built by Jonty Sachdeva</span><br />

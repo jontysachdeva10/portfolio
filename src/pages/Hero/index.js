@@ -34,7 +34,7 @@ const Hero = () => {
         >
           {/* <motion.span> */}
           <span className="hidden-title" ref={textRef}>
-            Full Stack developer who builds{" "}
+            Full Stack Web developer who builds{" "}
             <Underline>
               <span style={{ fontFamily: "NeueMontrealBold" }}>and </span>
             </Underline>
@@ -48,7 +48,7 @@ const Hero = () => {
           </span>
           <span className="hidden-title">
             <Underline>
-              <span style={{ fontFamily: "NeueMontrealBold" }}>design</span>
+              <span style={{ fontFamily: "NeueMontrealBold" }}>designs</span>
             </Underline>{" "}
             user experiences.
           </span>
@@ -73,7 +73,7 @@ const Hero = () => {
             </span>
           </div>
         </div> */}
-        <div style={{ height: "12em" }}></div>
+        <div style={{ height: "10em" }}></div>
       </Container>
     </div>
   );

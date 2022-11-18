@@ -41,7 +41,7 @@ const NavMenu = styled.div`
       top: 2px;
       left: 0;
       display: inline-block;
-      height: 1.2em;
+      height: 1.3em;
       width: 100%;
       border-bottom: 1.5px solid;
       opacity: 0;
