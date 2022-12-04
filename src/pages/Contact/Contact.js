@@ -41,11 +41,15 @@ export const GetInTouch = styled.div`
   font-family: "NeueMontreal";
 `;
 
-export const ContactMe = styled.span`
+export const ContactMe = styled.a`
   font-family: "NeueMontrealItalicMedium";
   /* text-decoration: underline; */
   cursor: pointer;
   position: relative;
+
+  &:hover {
+    color: black;
+  }
 
   &.underline-effect:after {
     content: "";

@@ -20,7 +20,7 @@ export const NavPosition = styled.div`
 `;
 
 export const Intro = styled.div`
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   font-size: 7rem;
   letter-spacing: 0.1rem;
   font-family: "NeueMontreal";

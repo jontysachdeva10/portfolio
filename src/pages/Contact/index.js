@@ -28,7 +28,7 @@ const Contact = () => {
         &nbsp;
         or
         &nbsp; */}
-        <ContactMe className="underline-effect">
+        <ContactMe className="underline-effect" href="https://www.linkedin.com/in/jonty-sachdeva-20001b149/" target="_blank">
           Connect over LinkedIn
         </ContactMe>
       </GetInTouch>

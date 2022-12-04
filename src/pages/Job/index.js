@@ -4,6 +4,7 @@ import "./Job.scss";
 import { FiArrowUpRight, FiArrowDownRight } from "react-icons/fi";
 import { Underline } from "../../components/Underline";
 import { Container, Header, HeaderTitle } from "./Job";
+import Accordion from "../../components/Accordion";
 
 const Job = () => {
   const [selected, setSelected] = useState(0);
@@ -25,9 +26,9 @@ const Job = () => {
     },
   ];
 
-  useEffect(() => {
-    if(selected) setIsOpen(true);
-  });
+  // useEffect(() => {
+  //   if(selected) setIsOpen(true);
+  // });
 
   return (
     <Container id="work">
@@ -39,7 +40,9 @@ const Job = () => {
       <div>
         <HeaderTitle>WHERE I'VE WORKED</HeaderTitle>
 
-        <div className="accordion">
+        <Accordion data={data} />
+
+        {/* <div className="accordion">
           {data.map((item, i) => (
             <div className="items" key={item.company}>
               <div className="title" onClick={() =>  setSelected(i) }>
@@ -77,7 +80,7 @@ const Job = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
 
       <div style={{ height: "8em" }}></div>

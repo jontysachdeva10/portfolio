@@ -1,16 +1,17 @@
 import React, { useEffect, useRef } from "react";
-import { CgArrowDown } from "react-icons/cg";
-import { motion } from "framer-motion";
+// import { CgArrowDown } from "react-icons/cg";
+// import { motion } from "framer-motion";
 import { Container, NavPosition, Intro, Resume } from "./Hero";
 import { Underline } from "../../components/Underline";
-import { Link } from "react-scroll";
 import Transition from "../../components/Transition/index";
 import gsap, { Power4 } from "gsap";
-import { FiArrowUpRight } from "react-icons/fi";
+// import { FiArrowUpRight } from "react-icons/fi";
 import "./Hero.scss";
 
 const Hero = () => {
   const hero = gsap.timeline();
+
+  const containerRef = useRef(null);
   const textRef = useRef(null);
 
   useEffect(() => {
@@ -24,7 +25,7 @@ const Hero = () => {
   return (
     <div>
       {/* <Transition timeline={hero} /> */}
-      <Container>
+      <Container ref={containerRef}>
         {/* <NavPosition>Front-end Developer at Publicis Sapient</NavPosition> */}
         <Intro
         // as={motion.div}
@@ -33,24 +34,22 @@ const Hero = () => {
         // transition={{ delay: 0.5, duration: 1 }}
         >
           {/* <motion.span> */}
-          <span className="hidden-title" ref={textRef}>
+          <span className="hidden-title">
             Full Stack Web developer who builds{" "}
-            <Underline>
-              <span style={{ fontFamily: "NeueMontrealBold" }}>and </span>
-            </Underline>
+            <span style={{ fontFamily: "NeueMontrealBold" }}>
+              <Underline>and</Underline>{" "}
+            </span>
           </span>
           <span className="hidden-title">
-            <Underline>
-              <span style={{ fontFamily: "NeueMontrealBold" }}>
-                occassionally
-              </span>
-            </Underline>{" "}
+            <span style={{ fontFamily: "NeueMontrealBold" }}>
+              <Underline>occassionally</Underline>{" "}
+            </span>
           </span>
           <span className="hidden-title">
-            <Underline>
-              <span style={{ fontFamily: "NeueMontrealBold" }}>designs</span>
-            </Underline>{" "}
-            user experiences.
+            <span style={{ fontFamily: "NeueMontrealBold" }}>
+              <Underline>designs</Underline>{" "}
+            </span>
+            User Experiences.
           </span>
           {/* </motion.span> */}
         </Intro>

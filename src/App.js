@@ -9,32 +9,37 @@ import Loading from "./components/Loading";
 import CustomCursor from "./components/CustomCursor";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+// import LocomotiveScroll from "locomotive-scroll";
+// import "locomotive-scroll/src/styles/locomotive-scroll.scss";
 
 function App() {
   const [loading, setLoading] = useState(false);
+
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 2300);
+    }, 7000);
   }, []);
 
   return (
     <div>
-      {/* <CustomCursor /> */}
-      {/* {loading ? (
+      <CustomCursor />
+      {loading ? (
         <Loading />
-      ) : ( */}
-      <Navbar />
-        <main>
-          <Hero />
-          <AboutMe />
-          <Job />
-          <Testimonials />
-          <Contact />
-          <Footer />
-        </main>
-      {/* )} */}
+      ) : (
+        <>
+          <Navbar />
+          <main>
+            <Hero />
+            <AboutMe />
+            <Job />
+            <Testimonials />
+            <Contact />
+            <Footer />
+          </main>
+        </>
+      )}
     </div>
   );
 }
