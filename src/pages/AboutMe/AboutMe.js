@@ -12,7 +12,7 @@ export const Container = styled.section`
 
 export const Header = styled.div`
   font-family: "NeueMontreal";
-  color: #eb533b;
+  /* color: #eb533b; */
   font-size: 1.7rem;
 `;
 
@@ -26,7 +26,7 @@ export const HeaderTitle = styled.div`
 
 export const Description = styled.div`
   margin-top: 8rem;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
   font-size: 2.3rem;
   font-family: "NeueMontrealMedium";
   width: 90%;

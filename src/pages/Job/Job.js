@@ -11,7 +11,8 @@ export const Container = styled.section`
 
 export const Header = styled.div`
   font-family: "NeueMontreal";
-  color: #eb533b;
+  /* color: #eb533b; */
+  color: #e1dfdd;
   font-size: 1.7rem;
 `;
 

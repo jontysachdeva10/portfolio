@@ -20,9 +20,19 @@ export const NavPosition = styled.div`
 `;
 
 export const Intro = styled.div`
-  padding-top: 1.5rem;
-  font-size: 7rem;
-  letter-spacing: 0.1rem;
+  /* padding-top: 1.5rem; */
+  font-size: 6rem;
+  /* letter-spacing: 0.1rem; */
+  padding-bottom: 2rem;
   font-family: "NeueMontreal";
+  font-weight: 600;
   line-height: 1.1;
+`;
+
+export const SubIntro = styled.div`
+  font-size: 2.7rem;
+  line-height: 1.05;
+  font-family: "NeueMontreal";
+  width: 55%;
+  padding-bottom: 2rem;
 `;

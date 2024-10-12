@@ -9,7 +9,7 @@
 .items {
   border-top: 1px solid #e1dfdd;
   padding: 1.2rem 0 0 0;
-
+ 
   button {
     width: 100%;
     background: none;
@@ -35,10 +35,8 @@
     max-height: 0;
     overflow: hidden;
     font-size: 1.4rem;
-    // float: right;
-    // margin-left: 33rem;
     font-family: "NeueMontrealMedium";
-    transition: all 0.2s ease-out;
+    transition: max-height 0.3s ease-out;
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -60,14 +58,22 @@
   }
 }
 
-.arrow-up {
-  stroke-linecap: unset !important;
-  stroke-linejoin: unset !important;
-  stroke-width: 2;
+.icon {
+  transition: transform 0.3s ease;
 }
 
-.arrow-down {
-  stroke-linecap: unset !important;
-  stroke-linejoin: unset !important;
-  stroke-width: 3 !important;
+.active .icon {
+  transform: rotate(270deg);
 }
+
+// .arrow-up {
+//   stroke-linecap: unset !important;
+//   stroke-linejoin: unset !important;
+//   stroke-width: 2;
+// }
+
+// .arrow-down {
+//   stroke-linecap: unset !important;
+//   stroke-linejoin: unset !important;
+//   stroke-width: 3 !important;
+// }

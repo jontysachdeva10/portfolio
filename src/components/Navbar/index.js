@@ -62,7 +62,9 @@ const NavMenu = styled.div`
 const Navbar = () => {
   return (
     <Container>
-      <NavIntro><span>Jonty Sachdeva</span></NavIntro>
+      <NavIntro>
+        <span>Jon®</span>
+      </NavIntro>
       <NavMenu>
         <Link
           className="underline-effect"

@@ -43,7 +43,7 @@ const Footer = () => {
         <div>
           <span>Jonty Sachdeva</span>
           <br />
-          <span>Frontend Developer</span>
+          <span>Front-end Developer</span>
         </div>
         <div className="social-links">
           <SocialLinks
@@ -74,9 +74,7 @@ const Footer = () => {
           </SocialLinks>
         </div>
         <div style={{ width: "15rem" }}>
-          <span>Built by Jonty Sachdeva</span>
-          <br />
-          <span>Design inspired from various portfolios</span>
+          <span>Built by yours truly.</span>
         </div>
       </div>
     </div>

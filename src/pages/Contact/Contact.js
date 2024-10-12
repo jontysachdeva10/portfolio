@@ -25,7 +25,8 @@ export const Description = styled.div`
 `;
 
 export const Dot = styled.div`
-  background-color: rgb(41 177 141);
+  /* background-color: rgb(41 177 141); */
+  background-color: rgb(177 41 41);
   height: 12px;
   width: 12px;
   border-radius: 50%;

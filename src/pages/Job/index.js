@@ -34,53 +34,12 @@ const Job = () => {
     <Container id="work">
       <Header>
         <h4>
-          02<span style={{ color: "#e1dfdd" }}>.</span>
+          02.
         </h4>
       </Header>
       <div>
         <HeaderTitle>WHERE I'VE WORKED</HeaderTitle>
-
         <Accordion data={data} />
-
-        {/* <div className="accordion">
-          {data.map((item, i) => (
-            <div className="items" key={item.company}>
-              <div className="title" onClick={() =>  setSelected(i) }>
-                <span style={{ transition: "all 0.5s ease-in-out" }}>
-                  {selected === i ? (
-                    <FiArrowDownRight
-                      className="arrow-down"
-                      style={{ fontSize: "1.1em", marginTop: '-17px' }}
-                    />
-                  ) : (
-                    <FiArrowUpRight
-                      className="arrow-up"
-                      style={{ fontSize: "1.1em", marginTop: '-17px'}}
-                    />
-                  )}
-                </span>
-                <span style={isOpen ? { float: "right", fontFamily: 'NeueMontrealBold' } : { float: "right", fontFamily: 'NeueMontreal' }}>{item.company}</span>
-              </div>
-              <div className={selected === i ? "content show" : "content"}>
-                <div style={{ float: "right" }}>
-                  <Underline>
-                    <span style={{ fontFamily: "NeueMontrealBold" }}>
-                      {item.role}
-                    </span>
-                  </Underline>
-                  ,<span> {item.date}</span>
-                </div>
-                <br />
-                <br />
-                <ul>
-                  {item?.contribution.map((x) => (
-                    <li key={x.length}>{x}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          ))}
-        </div> */}
       </div>
 
       <div style={{ height: "8em" }}></div>

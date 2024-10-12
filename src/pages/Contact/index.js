@@ -15,19 +15,16 @@ const Contact = () => {
       </Title>
       <Description>
         <Dot></Dot>
-        <span style={{ color: "rgb(41 177 141)", fontWeight: "bold", marginLeft: '4px' }}>
-          Available
+        {/* <span style={{ color: "rgb(41 177 141)", fontWeight: "bold", marginLeft: '4px' }}>
+          Not Available
+        </span> */}
+        <span style={{ color: "rgb(177 41 41)", fontWeight: "bold", marginLeft: '4px' }}>
+          Not Available
         </span>
         &nbsp;for freelance work.
       </Description>
       <GetInTouch>
         Get in touch!&nbsp;
-        {/* <ContactMe className="underline-effect">
-          Drop me an email
-        </ContactMe>
-        &nbsp;
-        or
-        &nbsp; */}
         <ContactMe className="underline-effect" href="https://www.linkedin.com/in/jonty-sachdeva-20001b149/" target="_blank">
           Connect over LinkedIn
         </ContactMe>

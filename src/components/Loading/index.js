@@ -61,7 +61,7 @@ const Loading = () => {
             <h3>{Math.floor(Math.random()* (9 - 6) + 6)}</h3>
           </li>
           <li>
-            <h3>9</h3>
+            <h3>0</h3>
           </li>
         </ul>
       </div>
@@ -78,7 +78,7 @@ const Loading = () => {
             <h3>{Math.floor(Math.random()* 10)}</h3>
           </li>
           <li>
-            <h3>9</h3>
+            <h3>0</h3>
           </li>
         </ul>
       </div>
